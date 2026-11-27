@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Why not? — Menu</title>
+<meta name="description" content="Why not? cocktail bar — menu">
+<meta name="theme-color" content="#faf7f2">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23121014'/%3E%3Ctext x='32' y='47' font-family='Arial' font-weight='900' font-size='44' text-anchor='middle' fill='%23f2a33a'%3E%3F%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf7f2;--card:#ffffff;--card2:#f1ece4;--line:#e9e2d8;--tx:#1d1a20;--mut:#857c74;--acc:#d9821a;--acc2:#e05a33;--shadow:0 1px 4px #0000000f,0 6px 18px #00000008;--chipbg:#ffffff;--onacc:#fff}
+:root[data-theme="dark"]{--bg:#121014;--card:#1d1a20;--card2:#262229;--line:#2c2830;--tx:#f3eee8;--mut:#9a9098;--acc:#f2a33a;--acc2:#e8613c;--shadow:none;--chipbg:#1d1a20;--onacc:#1a1206}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-padding-top:120px}
+body{background:var(--bg);color:var(--tx);font-family:Inter,Roboto,system-ui,sans-serif;font-size:15px;line-height:1.35;transition:background .2s,color .2s}
+.wrap{max-width:720px;margin:0 auto;padding-bottom:40px}
+/* header */
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 18px 4px}
+.logo{font-weight:800;font-size:30px;letter-spacing:-.8px;line-height:1}
+.logo b{color:var(--acc)}
+.tag{color:var(--mut);font-size:13px;margin-top:4px}
+.tools{display:flex;gap:8px}
+.btn{height:40px;min-width:40px;padding:0 12px;border-radius:12px;background:var(--card2);border:none;color:var(--tx);font:600 14px Inter,sans-serif;display:flex;align-items:center;gap:6px;cursor:pointer}
+.btn svg{width:18px;height:18px}
+/* sticky chips */
+nav{position:sticky;top:0;z-index:5;background:var(--bg);padding:10px 0 10px;border-bottom:1px solid transparent;transition:border-color .2s}
+nav.stuck{border-bottom-color:var(--line)}
+.chips{display:flex;gap:7px;overflow-x:auto;padding:0 16px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;padding:8px 14px;border-radius:20px;background:var(--chipbg);border:1px solid var(--line);font-size:14px;color:var(--tx);white-space:nowrap;cursor:pointer;text-decoration:none}
+.chip.on{background:var(--acc);border-color:var(--acc);color:var(--onacc);font-weight:600}
+.note{margin:4px 18px 0;font-size:12.5px;color:var(--mut)}
+/* sections */
+section{padding-top:18px}
+h2{font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:var(--mut);font-weight:600;padding:0 18px 10px;display:flex;justify-content:space-between}
+h2 small{letter-spacing:0;text-transform:none;font-weight:500}
+/* cocktail cards */
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;padding:0 14px}
+@media(min-width:560px){.grid{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--card);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);cursor:pointer;display:flex;flex-direction:column}
+.ph{aspect-ratio:1/1;background:var(--card2);overflow:hidden}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.cb{padding:9px 11px 11px;display:flex;flex-direction:column;flex:1}
+.nm{font-weight:700;font-size:15.5px;line-height:1.2}
+.nm2{font-size:12.5px;color:var(--mut);margin-top:1px}
+.ing{font-size:12.5px;color:var(--mut);margin-top:5px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.pr{font-weight:800;font-size:17px;color:var(--acc);margin-top:auto;padding-top:7px;letter-spacing:-.2px}
+.pr u{text-decoration:none;font-size:12px;font-weight:600;margin-left:2px}
+.ph.emo{display:flex;align-items:center;justify-content:center;font-size:64px;flex-direction:column;gap:6px}
+.ph.emo small{font-size:11px;color:var(--mut);letter-spacing:.3px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:0 14px}
+@media(min-width:560px){.grid3{grid-template-columns:repeat(4,1fr)}}
+.bt{background:var(--card);border-radius:14px;box-shadow:var(--shadow);overflow:hidden;text-align:center;display:flex;flex-direction:column}
+.bt .bimg{height:118px;display:flex;align-items:flex-end;justify-content:center;padding-top:10px}
+.bt .bimg svg{height:104px;width:auto;filter:drop-shadow(0 4px 5px #0002)}
+.bt .bimg img{height:110px;width:100%;object-fit:contain}
+.bt .bn{font-weight:600;font-size:13.5px;line-height:1.2;padding:8px 6px 0;min-height:40px;display:flex;align-items:center;justify-content:center}
+.bt .pr{font-size:15px;padding:2px 0 10px;margin:0}
+.flag{width:24px;height:16px;border-radius:3px;flex:none;box-shadow:0 0 0 1px #0002;overflow:hidden;display:block}
+.lg button{display:flex;align-items:center;gap:10px}
+/* rows */
+.box{margin:0 14px;background:var(--card);border-radius:16px;box-shadow:var(--shadow);padding:2px 14px}
+.row{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:none}
+.ic{width:46px;height:46px;border-radius:12px;flex:none;overflow:hidden;display:flex;align-items:center;justify-content:center;font-size:22px}
+.ic img{width:100%;height:100%;object-fit:cover}
+.row .mid{flex:1;min-width:0}
+.row .nm{font-size:15.5px;font-weight:600}
+.row .ing{margin-top:2px;-webkit-line-clamp:1}
+.row .pr{margin:0;padding:0;font-size:16px;flex:none}
+.dots{flex:1;border-bottom:1.5px dotted var(--line);margin:0 4px;transform:translateY(-4px);min-width:10px}
+.li{display:flex;align-items:baseline;padding:11px 0;border-bottom:1px solid var(--line)}
+.li:last-child{border-bottom:none}
+.li .nm{font-weight:600;font-size:15.5px}
+.li .nm small{font-weight:400;color:var(--mut);font-size:12.5px;margin-left:6px}
+.li .pr{margin:0;padding:0;font-size:16px}
+.ask{color:var(--mut);font-size:13px;font-weight:500}
+footer{text-align:center;padding:34px 18px 10px;color:var(--mut);font-size:13px}
+footer .logo{font-size:22px;color:var(--tx);margin-bottom:6px}
+/* sheet */
+.veil{position:fixed;inset:0;background:#0008;opacity:0;pointer-events:none;transition:opacity .2s;z-index:10}
+.veil.on{opacity:1;pointer-events:auto}
+.sheet{position:fixed;left:0;right:0;bottom:0;max-width:720px;margin:0 auto;background:var(--card);border-radius:22px 22px 0 0;transform:translateY(105%);transition:transform .25s ease;z-index:11;max-height:92vh;overflow:auto}
+.sheet.on{transform:none}
+.sheet .big{width:100%;aspect-ratio:4/5;max-height:58vh;object-fit:cover;display:block}
+.sheet .in{padding:16px 20px 26px}
+.sheet h3{font-size:26px;font-weight:800;letter-spacing:-.5px}
+.sheet .nm2{font-size:15px}
+.sheet .ings{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.sheet .ings span{background:var(--card2);border-radius:10px;padding:6px 10px;font-size:14px}
+.sheet .pr{font-size:24px;margin-top:16px}
+.x{position:absolute;top:12px;right:12px;width:36px;height:36px;border-radius:50%;background:#000a;color:#fff;border:none;font-size:20px;cursor:pointer}
+.langs{padding:18px 18px 26px}
+.langs h3{font-size:18px;margin-bottom:12px}
+.lg{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.lg button{padding:12px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--tx);font:500 15px Inter,sans-serif;text-align:left;cursor:pointer}
+.lg button.on{border-color:var(--acc);color:var(--acc);font-weight:700}
+</style>
+</head>
+<body>
+<div class="wrap">
+ <header>
+  <div><div class="logo">Why not<b>?</b></div><div class="tag" data-t="tagline"></div></div>
+  <div class="tools">
+   <button class="btn" id="langBtn" aria-label="Language"><span id="langCode" style="display:flex;align-items:center;gap:7px">EN</span></button>
+   <button class="btn" id="themeBtn" aria-label="Theme"></button>
+  </div>
+ </header>
+ <nav id="nav"><div class="chips" id="chips"></div></nav>
+ <div class="note" data-t="note"></div>
+ <main id="menu"></main>
+ <footer><div class="logo">Why not<b>?</b></div><div data-t="bye"></div></footer>
+</div>
+<div class="veil" id="veil"></div>
+<div class="sheet" id="sheet"></div>
+<script src="menu-data.js"></script>
+<script>
+const FLAGS={
+ en:'<rect width="30" height="20" fill="#012169"/><path d="M0 0L30 20M30 0L0 20" stroke="#fff" stroke-width="4"/><path d="M0 0L30 20M30 0L0 20" stroke="#C8102E" stroke-width="1.6"/><path d="M15 0v20M0 10h30" stroke="#fff" stroke-width="6"/><path d="M15 0v20M0 10h30" stroke="#C8102E" stroke-width="3.4"/>',
+ ru:'<rect width="30" height="20" fill="#fff"/><rect y="6.67" width="30" height="6.67" fill="#0039A6"/><rect y="13.33" width="30" height="6.67" fill="#D52B1E"/>',
+ vi:'<rect width="30" height="20" fill="#DA251D"/><path d="M15 4l1.76 5.4h5.68l-4.6 3.34 1.76 5.4L15 14.8l-4.6 3.34 1.76-5.4-4.6-3.34h5.68z" fill="#FFFF00"/>',
+ fr:'<rect width="10" height="20" fill="#0055A4"/><rect x="10" width="10" height="20" fill="#fff"/><rect x="20" width="10" height="20" fill="#EF4135"/>',
+ es:'<rect width="30" height="20" fill="#AA151B"/><rect y="5" width="30" height="10" fill="#F1BF00"/>',
+ de:'<rect width="30" height="6.67" fill="#000"/><rect y="6.67" width="30" height="6.67" fill="#DD0000"/><rect y="13.33" width="30" height="6.67" fill="#FFCE00"/>',
+ ko:'<rect width="30" height="20" fill="#fff"/><circle cx="15" cy="10" r="5" fill="#0047A0"/><path d="M10 10a5 5 0 0 1 10 0a2.5 2.5 0 0 1-5 0a2.5 2.5 0 0 0-5 0z" fill="#CD2E3A"/><g stroke="#000" stroke-width="1.1"><path d="M4 4.5l3-2.2M4.7 5.5l3-2.2M5.4 6.5l3-2.2M22.6 15.7l3-2.2M23.3 16.7l3-2.2M24 17.7l3-2.2M4 15.5l3 2.2M4.7 14.5l3 2.2M5.4 13.5l3 2.2M22.6 4.3l3 2.2M23.3 3.3l3 2.2M24 2.3l3 2.2"/></g>',
+ zh:'<rect width="30" height="20" fill="#DE2910"/><path d="M5 2.5l.9 2.7h2.8l-2.3 1.7.9 2.7L5 7.9 2.7 9.6l.9-2.7-2.3-1.7h2.8z" fill="#FFDE00"/><g fill="#FFDE00"><circle cx="10" cy="2" r=".8"/><circle cx="12" cy="4" r=".8"/><circle cx="12" cy="7" r=".8"/><circle cx="10" cy="9" r=".8"/></g>'
+};
+const flag=c=>`<svg class="flag" viewBox="0 0 30 20">${FLAGS[c]}</svg>`;
+function bottleSvg(b){const[sh,glass,label,cap]=b;
+ const body=sh=="square"?'<rect x="9" y="42" width="42" height="72" rx="4"/><path d="M9 46q0-10 13-12h16q13 2 13 12z"/>':sh=="tall"?'<rect x="16" y="36" width="28" height="78" rx="6"/><path d="M16 42q0-8 10-10h8q10 2 10 10z"/>':'<rect x="11" y="44" width="38" height="70" rx="9"/><path d="M11 52q0-14 15-18h8q15 4 15 18z"/>';
+ return`<svg viewBox="0 0 60 120"><g fill="${glass}" stroke="#0003" stroke-width=".8"><rect x="25" y="10" width="10" height="28" rx="2"/>${body}</g><rect x="23.5" y="3" width="13" height="12" rx="2" fill="${cap}"/><rect x="${sh=="tall"?18:sh=="square"?12:13}" y="66" width="${sh=="tall"?24:sh=="square"?36:34}" height="30" rx="2" fill="${label}" stroke="#0002" stroke-width=".6"/><rect x="${sh=="tall"?21:15}" y="${sh=="tall"?44:50}" width="3.5" height="56" rx="1.7" fill="#fff" opacity=".28"/></svg>`}
+const LANGS=[["en","English"],["ru","Русский"],["vi","Tiếng Việt"],["fr","Français"],["es","Español"],["de","Deutsch"],["ko","한국어"],["zh","中文"]];
+const T={
+ tagline:{en:"Cocktail bar",ru:"Коктейль-бар",vi:"Quán bar cocktail",fr:"Bar à cocktails",es:"Bar de cócteles",de:"Cocktailbar",ko:"칵테일 바",zh:"鸡尾酒吧"},
+ note:{en:"Prices in Vietnamese dong (₫)",ru:"Цены во вьетнамских донгах (₫)",vi:"Giá tính bằng đồng (₫)",fr:"Prix en dongs vietnamiens (₫)",es:"Precios en dongs vietnamitas (₫)",de:"Preise in vietnamesischen Dong (₫)",ko:"가격 단위: 베트남 동 (₫)",zh:"价格单位：越南盾 (₫)"},
+ bye:{en:"Enjoy your evening!",ru:"Хорошего вечера!",vi:"Chúc bạn một buổi tối vui vẻ!",fr:"Bonne soirée !",es:"¡Que disfrutes la noche!",de:"Einen schönen Abend!",ko:"즐거운 저녁 보내세요!",zh:"祝您今晚愉快！"},
+ portion:{en:"per 50 ml",ru:"порция 50 мл",vi:"mỗi 50 ml",fr:"les 50 ml",es:"por 50 ml",de:"pro 50 ml",ko:"50 ml 기준",zh:"每 50 毫升"},
+ ask:{en:"ask the bartender",ru:"уточните у бармена",vi:"hỏi bartender",fr:"demandez au barman",es:"pregunte al barman",de:"bitte nachfragen",ko:"바텐더에게 문의",zh:"请咨询调酒师"},
+ lang:{en:"Language",ru:"Язык",vi:"Ngôn ngữ",fr:"Langue",es:"Idioma",de:"Sprache",ko:"언어",zh:"语言"},
+ cider:{en:"cider",ru:"сидр",vi:"cider",fr:"cidre",es:"sidra",de:"Cidre",ko:"사이다",zh:"苹果酒"},
+ sec_cocktails:{en:"Cocktails",ru:"Коктейли",vi:"Cocktail",fr:"Cocktails",es:"Cócteles",de:"Cocktails",ko:"칵테일",zh:"鸡尾酒"},
+ sec_shots:{en:"Shots",ru:"Шоты",vi:"Shot",fr:"Shots",es:"Chupitos",de:"Shots",ko:"샷",zh:"子弹杯"},
+ sec_beer:{en:"Beer",ru:"Пиво",vi:"Bia",fr:"Bière",es:"Cerveza",de:"Bier",ko:"맥주",zh:"啤酒"},
+ sec_whisky:{en:"Whisky",ru:"Виски",vi:"Whisky",fr:"Whisky",es:"Whisky",de:"Whisky",ko:"위스키",zh:"威士忌"},
+ sec_rum:{en:"Rum",ru:"Ром",vi:"Rum",fr:"Rhum",es:"Ron",de:"Rum",ko:"럼",zh:"朗姆酒"},
+ sec_gin:{en:"Gin",ru:"Джин",vi:"Gin",fr:"Gin",es:"Ginebra",de:"Gin",ko:"진",zh:"金酒"},
+ sec_vodka:{en:"Vodka",ru:"Водка",vi:"Vodka",fr:"Vodka",es:"Vodka",de:"Wodka",ko:"보드카",zh:"伏特加"},
+ sec_tequila:{en:"Tequila",ru:"Текила",vi:"Tequila",fr:"Tequila",es:"Tequila",de:"Tequila",ko:"데킬라",zh:"龙舌兰"},
+ sec_liqueur:{en:"Liqueurs",ru:"Ликёры",vi:"Rượu mùi",fr:"Liqueurs",es:"Licores",de:"Liköre",ko:"리큐어",zh:"利口酒"},
+ sec_soft:{en:"Soft drinks",ru:"Безалкогольные",vi:"Nước ngọt",fr:"Sans alcool",es:"Refrescos",de:"Softdrinks",ko:"음료",zh:"软饮料"},
+ sec_snacks:{en:"Snacks",ru:"Закуски",vi:"Đồ ăn vặt",fr:"En-cas",es:"Picoteo",de:"Snacks",ko:"스낵",zh:"小吃"}
+};
+let lang, theme;
+const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
+const q=new URLSearchParams(location.search);
+lang=q.get("lang")||store.get("lang")||(navigator.language||"en").slice(0,2).toLowerCase();
+if(!LANGS.some(l=>l[0]==lang))lang="en";
+theme=q.get("theme")||store.get("theme")||"light";
+const t=k=>(T[k]&&(T[k][lang]||T[k].en))||k;
+const loc=o=>typeof o=="string"?o:(o[lang]||o.en);
+// Второе название: локальное под английским (во вьетнамском: вьетнамское + английское)
+function names(n){if(typeof n=="string")return[n,""];const en=n.en,l=n[lang];return(!l||l==en)?[en,""]:(lang=="vi"?[l,en]:[en,l])}
+const money=p=>p==null?`<span class="ask">${t("ask")}</span>`:`${p.toLocaleString("ru-RU").replace(/ /g," ")}<u>₫</u>`;
+const ingTxt=it=>it.ing.map((x,i)=>{const s=loc(x);return i?s.toLowerCase():s}).join(" · ");
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const tint=h=>theme=="dark"?`hsl(${h} 30% 20%)`:`hsl(${h} 60% 92%)`;
+function render(){
+ document.documentElement.lang=lang;document.documentElement.dataset.theme=theme;
+ document.querySelector('meta[name=theme-color]').content=theme=="dark"?"#121014":"#faf7f2";
+ document.getElementById("langCode").innerHTML=flag(lang)+lang.toUpperCase();
+ document.getElementById("themeBtn").innerHTML=theme=="dark"
+  ?'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>'
+  :'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>';
+ document.querySelectorAll("[data-t]").forEach(e=>e.textContent=t(e.dataset.t));
+ document.getElementById("chips").innerHTML=MENU.map((s,i)=>`<a class="chip${i?"":" on"}" href="#${s.id}" data-s="${s.id}">${t("sec_"+s.id)}</a>`).join("");
+ document.getElementById("menu").innerHTML=MENU.map(sec=>{
+  let h=`<section id="${sec.id}"><h2>${t("sec_"+sec.id)}${sec.portion?`<small>${t("portion")}</small>`:""}</h2>`;
+  if(sec.kind=="cards")h+=`<div class="grid">${sec.items.map(it=>{const[a,b]=names(it.name);return`<div class="card" data-id="${it.id}">${it.photo?`<div class="ph"><img loading="lazy" src="img/${it.photo}.jpg" alt="${esc(a)}"></div>`:`<div class="ph emo" style="background:${tint(it.hue)}">${it.emoji}</div>`}<div class="cb"><div class="nm">${esc(a)}</div>${b?`<div class="nm2">${esc(b)}</div>`:""}<div class="ing">${esc(ingTxt(it))}</div><div class="pr">${money(it.price)}</div></div></div>`}).join("")}</div>`;
+  else if(sec.kind=="rows")h+=`<div class="box">${sec.items.map(it=>{const[a,b]=names(it.name);return`<div class="row" data-id="${it.id}"><div class="ic" style="background:${tint(it.hue)}">${it.photo?`<img loading="lazy" src="img/${it.photo}_s.jpg" alt="">`:it.emoji}</div><div class="mid"><div class="nm">${esc(a)}</div><div class="ing">${b?esc(b)+" · ":""}${esc(ingTxt(it))}</div></div><div class="pr">${money(it.price)}</div></div>`}).join("")}</div>`;
+  else if(sec.kind=="bottles")h+=`<div class="grid3">${sec.items.map(it=>{const[a]=names(it.name);return`<div class="bt"><div class="bimg" style="background:linear-gradient(${theme=="dark"?"#2a252c,#1d1a20":"#f6f0e7,#fff"})">${it.img?`<img loading="lazy" src="img/bottles/${it.img}" alt="">`:bottleSvg(it.bottle)}</div><div class="bn">${esc(a)}</div><div class="pr">${money(it.price)}</div></div>`}).join("")}</div>`;
+  else h+=`<div class="box">${sec.items.map(it=>{const[a]=names(it.name);return`<div class="li"><div class="nm">${esc(a)}${it.note?`<small>${t(it.note)}</small>`:""}</div><div class="dots"></div><div class="pr">${money(it.price)}</div></div>`}).join("")}</div>`;
+  return h+"</section>"}).join("");
+}
+// карточка коктейля
+const sheet=document.getElementById("sheet"),veil=document.getElementById("veil");
+function open(html){sheet.innerHTML=html;sheet.scrollTop=0;sheet.classList.add("on");veil.classList.add("on")}
+function close(){sheet.classList.remove("on");veil.classList.remove("on")}
+veil.onclick=close;
+document.getElementById("menu").addEventListener("click",e=>{
+ const el=e.target.closest("[data-id]");if(!el)return;
+ const it=MENU.flatMap(s=>s.items).find(x=>x.id==el.dataset.id);const[a,b]=names(it.name);
+ open(`<button class="x" onclick="close()">×</button>${it.photo?`<img class="big" src="img/${it.photo}.jpg" alt="">`:`<div style="height:120px;background:${tint(it.hue)};display:flex;align-items:center;justify-content:center;font-size:56px">${it.emoji}</div>`}<div class="in"><h3>${esc(a)}</h3>${b?`<div class="nm2">${esc(b)}</div>`:""}<div class="ings">${it.ing.map(x=>`<span>${esc(loc(x))}</span>`).join("")}</div><div class="pr">${money(it.price)}</div></div>`);
+});
+document.getElementById("langBtn").onclick=()=>open(`<div class="langs"><h3>${t("lang")}</h3><div class="lg">${LANGS.map(([c,n])=>`<button data-l="${c}" class="${c==lang?"on":""}">${flag(c)}${n}</button>`).join("")}</div></div>`);
+sheet.addEventListener("click",e=>{const b=e.target.closest("[data-l]");if(b){lang=b.dataset.l;store.set("lang",lang);close();render()}});
+document.getElementById("themeBtn").onclick=()=>{theme=theme=="dark"?"light":"dark";store.set("theme",theme);render()};
+// подсветка раздела в чипах
+const nav=document.getElementById("nav");
+addEventListener("scroll",()=>{
+ nav.classList.toggle("stuck",nav.getBoundingClientRect().top<=0);
+ let cur=MENU[0].id;for(const s of MENU){const el=document.getElementById(s.id);if(el&&el.getBoundingClientRect().top<130)cur=s.id}
+ document.querySelectorAll(".chip").forEach(c=>{const on=c.dataset.s==cur;if(on&&!c.classList.contains("on"))c.scrollIntoView({inline:"center",block:"nearest"});c.classList.toggle("on",on)});
+},{passive:true});
+render();
+</script>
+</body>
+</html>
