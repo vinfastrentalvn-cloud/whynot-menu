@@ -824,7 +824,8 @@ window.MENU = [
      "#c9842f",
      "#f4ead7",
      "#b8902f"
-    ]
+    ],
+    "img": "wallst.jpg"
    },
    {
     "id": "jimbeam",
@@ -835,7 +836,8 @@ window.MENU = [
      "#b8641f",
      "#f6f1e6",
      "#1d1d1d"
-    ]
+    ],
+    "img": "jimbeam.jpg"
    },
    {
     "id": "ballantines",
@@ -846,7 +848,8 @@ window.MENU = [
      "#c07a2a",
      "#7a1f24",
      "#c9a24a"
-    ]
+    ],
+    "img": "ballantines.jpg"
    },
    {
     "id": "jameson",
@@ -857,7 +860,8 @@ window.MENU = [
      "#2e5a34",
      "#efe4c6",
      "#c9a24a"
-    ]
+    ],
+    "img": "jameson.jpg"
    },
    {
     "id": "jack",
@@ -868,7 +872,8 @@ window.MENU = [
      "#5b3216",
      "#151515",
      "#151515"
-    ]
+    ],
+    "img": "jack.jpg"
    }
   ]
  },
@@ -886,7 +891,8 @@ window.MENU = [
      "#8a4a1c",
      "#b3262d",
      "#2a2a2a"
-    ]
+    ],
+    "img": "chauvet_r.jpg"
    },
    {
     "id": "chauvet_w",
@@ -897,7 +903,8 @@ window.MENU = [
      "#e9eef0",
      "#ffffff",
      "#2a4f8a"
-    ]
+    ],
+    "img": "chauvet_w.jpg"
    },
    {
     "id": "bacardi",
@@ -908,7 +915,8 @@ window.MENU = [
      "#e9eef0",
      "#f2f2f2",
      "#151515"
-    ]
+    ],
+    "img": "bacardi.jpg"
    },
    {
     "id": "captain",
@@ -919,7 +927,8 @@ window.MENU = [
      "#7a3e16",
      "#e8d3a8",
      "#151515"
-    ]
+    ],
+    "img": "captain.jpg"
    }
   ]
  },
@@ -937,7 +946,8 @@ window.MENU = [
      "#e9eef0",
      "#2b5f9e",
      "#2b5f9e"
-    ]
+    ],
+    "img": "harpoon.jpg"
    },
    {
     "id": "gordons",
@@ -977,7 +987,8 @@ window.MENU = [
      "#e9eef0",
      "#c52b2b",
      "#c9a24a"
-    ]
+    ],
+    "img": "hanoi.jpg"
    },
    {
     "id": "smirnoff",
