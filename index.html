@@ -36,11 +36,12 @@ img{display:block}
 
 /* ---------- header ---------- */
 .top{display:flex;align-items:center;gap:12px;padding:14px 14px 12px;max-width:1600px;margin:0 auto}
-.brand{display:flex;align-items:center;gap:10px;min-width:0;text-decoration:none;color:inherit}
+.brand{display:flex;align-items:center;gap:10px;min-width:0;flex:1 1 auto;text-decoration:none;color:inherit}
+.brand>div:last-child{min-width:0}
 .mark{width:52px;height:52px;border-radius:12px;background:#202020;color:#FFD400;display:flex;align-items:center;justify-content:center;font:900 38px/1 Inter,sans-serif;flex:none}
 :root[data-theme="dark"] .mark{box-shadow:0 0 0 2px #FFD400 inset}
-.bt1{font:900 32px/1 Inter,sans-serif;letter-spacing:-1px;white-space:nowrap}
-.bt2{font-weight:700;font-size:14px;margin-top:3px;white-space:nowrap}
+.bt1{font:900 clamp(22px,7.4vw,32px)/1 Inter,sans-serif;letter-spacing:-1px;white-space:nowrap}
+.bt2{font-weight:700;font-size:clamp(11.5px,3.4vw,14px);margin-top:3px;white-space:nowrap}
 .banner{display:none}
 .tools{margin-left:auto;display:flex;gap:8px;align-items:center;flex:none}
 .lbtn{height:42px;padding:0 12px;border-radius:21px;background:#202020;color:#FFF6D6;border:none;display:flex;align-items:center;gap:7px;font-weight:800;font-size:15px;cursor:pointer}
@@ -119,6 +120,7 @@ button.row{cursor:pointer}
 .row .pr.ask{font-weight:600;font-size:12px;color:var(--ask);max-width:92px;line-height:1.2}
 footer{text-align:center;padding:22px 14px 34px;font-weight:700}
 footer .bt1{font-size:24px}
+
 footer small{display:block;font-weight:500;color:var(--mut);margin-top:6px}
 
 /* ---------- sheet ---------- */
@@ -138,6 +140,16 @@ footer small{display:block;font-weight:500;color:var(--mut);margin-top:6px}
 .sheet .pill.ask{color:inherit;font-size:14px}
 .x{position:absolute;top:12px;right:12px;width:44px;height:44px;border-radius:50%;background:rgba(0,0,0,.65);color:#fff;border:none;font-size:24px;cursor:pointer;line-height:1}
 
+@media (max-width:420px){
+ .top{gap:8px;padding:12px 10px 10px}
+ .mark{width:42px;height:42px;font-size:30px;border-radius:10px}
+ .brand{gap:8px}
+ .tools{gap:6px}
+ .lbtn{height:38px;padding:0 9px;gap:5px;font-size:14px}
+ .tbtn{width:38px;height:38px}
+ .mbanner{margin:0 10px 10px}
+}
+@media (max-width:340px){.lbtn .car{display:none}.flag{width:20px;height:14px}}
 /* ---------- tablet ---------- */
 @media (min-width:600px){
  .grid{grid-template-columns:repeat(3,minmax(0,1fr))}
