@@ -958,7 +958,8 @@ window.MENU = [
      "#3f7a3a",
      "#f3e7b5",
      "#c32f2a"
-    ]
+    ],
+    "img": "gordons.jpg"
    },
    {
     "id": "bombay",
@@ -969,7 +970,8 @@ window.MENU = [
      "#3a6fc4",
      "#c9d6e6",
      "#b9c2cc"
-    ]
+    ],
+    "img": "bombay.jpg"
    }
   ]
  },
@@ -999,7 +1001,8 @@ window.MENU = [
      "#e9eef0",
      "#c8242b",
      "#c8242b"
-    ]
+    ],
+    "img": "smirnoff.jpg"
    }
   ]
  },
@@ -1017,7 +1020,8 @@ window.MENU = [
      "#d8a03a",
      "#1d1d1d",
      "#c9a24a"
-    ]
+    ],
+    "img": "cuervo_g.jpg"
    },
    {
     "id": "cuervo",
@@ -1028,7 +1032,8 @@ window.MENU = [
      "#e9eef0",
      "#f4ecd8",
      "#1d1d1d"
-    ]
+    ],
+    "img": "cuervo.jpg"
    }
   ]
  },
@@ -1046,7 +1051,8 @@ window.MENU = [
      "#2d4a2a",
      "#e87a1e",
      "#e87a1e"
-    ]
+    ],
+    "img": "jager.jpg"
    },
    {
     "id": "campari",
