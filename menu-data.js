@@ -1063,7 +1063,8 @@ window.MENU = [
      "#c3172b",
      "#f6f1e6",
      "#1d1d1d"
-    ]
+    ],
+    "img": "campari.jpg"
    },
    {
     "id": "martini",
@@ -1074,7 +1075,8 @@ window.MENU = [
      "#7a1f1f",
      "#f6f1e6",
      "#c32f2a"
-    ]
+    ],
+    "img": "martini.jpg"
    },
    {
     "id": "baileys",
@@ -1085,7 +1087,8 @@ window.MENU = [
      "#4a2e1f",
      "#e9dcc0",
      "#1d1d1d"
-    ]
+    ],
+    "img": "baileys.jpg"
    }
   ]
  },
