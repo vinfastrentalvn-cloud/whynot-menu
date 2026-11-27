@@ -119,9 +119,9 @@ window.MENU = [
       "vi": "Tequila"
      },
      {
-      "en": "Triple sec",
-      "ru": "Трипл сек",
-      "vi": "Triple sec"
+      "en": "Cointreau",
+      "ru": "Куантро",
+      "vi": "Cointreau"
      },
      {
       "en": "Lime juice",
@@ -376,9 +376,9 @@ window.MENU = [
       "vi": "Tequila"
      },
      {
-      "en": "Triple sec",
-      "ru": "Трипл сек",
-      "vi": "Triple sec"
+      "en": "Cointreau",
+      "ru": "Куантро",
+      "vi": "Cointreau"
      },
      {
       "en": "Lime juice",
@@ -736,9 +736,9 @@ window.MENU = [
       "vi": "Rượu kem Ireland (Baileys)"
      },
      {
-      "en": "Triple sec",
-      "ru": "Трипл сек",
-      "vi": "Triple sec"
+      "en": "Cointreau",
+      "ru": "Куантро",
+      "vi": "Cointreau"
      }
     ]
    },
@@ -841,7 +841,7 @@ window.MENU = [
    },
    {
     "id": "ballantines",
-    "name": "Ballantine's",
+    "name": "Ballantine's Finest",
     "price": 60000,
     "bottle": [
      "square",
@@ -908,7 +908,7 @@ window.MENU = [
    },
    {
     "id": "bacardi",
-    "name": "Bacardi",
+    "name": "Bacardi Light",
     "price": 60000,
     "bottle": [
      "round",
@@ -920,7 +920,7 @@ window.MENU = [
    },
    {
     "id": "captain",
-    "name": "Captain Morgan",
+    "name": "Captain Morgan Spiced",
     "price": 60000,
     "bottle": [
      "round",
